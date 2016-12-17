@@ -85,18 +85,18 @@
 
 
 <meta name="description" content="12345title: Hello Worlddate: 2014-11-01 20:10:33categories: Testingtags:  - Testing
- 1234567891011121314151617181920212223242526&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;    &amp;lt;head&amp;gt;        &amp;lt;m">
+1234567891011121314151617181920212223242526&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;    &amp;lt;head&amp;gt;        &amp;lt;me">
 <meta property="og:type" content="article">
 <meta property="og:title" content="追梦">
 <meta property="og:url" content="http://dream-worker.github.io/2016/12/13/闭包/index.html">
 <meta property="og:site_name" content="追梦">
 <meta property="og:description" content="12345title: Hello Worlddate: 2014-11-01 20:10:33categories: Testingtags:  - Testing
- 1234567891011121314151617181920212223242526&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;    &amp;lt;head&amp;gt;        &amp;lt;m">
-<meta property="og:updated_time" content="2016-12-17T09:05:21.685Z">
+1234567891011121314151617181920212223242526&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;    &amp;lt;head&amp;gt;        &amp;lt;me">
+<meta property="og:updated_time" content="2016-12-17T09:08:39.448Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="追梦">
 <meta name="twitter:description" content="12345title: Hello Worlddate: 2014-11-01 20:10:33categories: Testingtags:  - Testing
- 1234567891011121314151617181920212223242526&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;    &amp;lt;head&amp;gt;        &amp;lt;m">
+1234567891011121314151617181920212223242526&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;    &amp;lt;head&amp;gt;        &amp;lt;me">
 
 
 
@@ -374,7 +374,7 @@
 
       
         <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">title: Hello World</div><div class="line">date: <span class="number">2014</span><span class="number">-11</span><span class="number">-01</span> <span class="number">20</span>:<span class="number">10</span>:<span class="number">33</span></div><div class="line">categories: Testing</div><div class="line">tags:</div><div class="line">  - Testing</div></pre></td></tr></table></figure>
-<h2 id=""><a href="#" class="headerlink" title=" "></a> </h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang="en"&gt;</div><div class="line">    &lt;head&gt;</div><div class="line">        &lt;meta charset="utf-8"&gt;</div><div class="line">    &lt;/head&gt;</div><div class="line">    &lt;body&gt;</div><div class="line">    &lt;div class = 'clickBox'&gt;1&lt;/div&gt;</div><div class="line">    &lt;div class = 'clickBox'&gt;2&lt;/div&gt;</div><div class="line">    &lt;div class = 'clickBox'&gt;3&lt;/div&gt;</div><div class="line">    &lt;script&gt;</div><div class="line">    // for循环中， i每一次赋值，都对应一个新的函数，每一个函数都创建一个独立的空间。</div><div class="line">    // return 的小函数中要打印变量，但是该变量不在本函数作用域内。所以去上一级中查找。</div><div class="line">    // 因此，每一次遍历，都得到一个新的函数，并添加新的点击事件。</div><div class="line">function iteratorFactory(i)&#123;</div><div class="line">    var onclick = function(e)&#123;</div><div class="line">        console.log(i)</div><div class="line">    &#125;</div><div class="line">    return onclick;</div><div class="line">&#125;</div><div class="line">var clickBoxs = document.querySelectorAll('.clickBox')</div><div class="line">for (var i = 0; i &lt; clickBoxs.length; i++)&#123;</div><div class="line">    clickBoxs[i].onclick = iteratorFactory(i)</div><div class="line">&#125;</div><div class="line">    &lt;/script&gt;</div><div class="line">    &lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang="en"&gt;</div><div class="line">    &lt;head&gt;</div><div class="line">        &lt;meta charset="utf-8"&gt;</div><div class="line">    &lt;/head&gt;</div><div class="line">    &lt;body&gt;</div><div class="line">    &lt;div class = 'clickBox'&gt;1&lt;/div&gt;</div><div class="line">    &lt;div class = 'clickBox'&gt;2&lt;/div&gt;</div><div class="line">    &lt;div class = 'clickBox'&gt;3&lt;/div&gt;</div><div class="line">    &lt;script&gt;</div><div class="line">    // for循环中， i每一次赋值，都对应一个新的函数，每一个函数都创建一个独立的空间。</div><div class="line">    // return 的小函数中要打印变量，但是该变量不在本函数作用域内。所以去上一级中查找。</div><div class="line">    // 因此，每一次遍历，都得到一个新的函数，并添加新的点击事件。</div><div class="line">function iteratorFactory(i)&#123;</div><div class="line">    var onclick = function(e)&#123;</div><div class="line">        console.log(i)</div><div class="line">    &#125;</div><div class="line">    return onclick;</div><div class="line">&#125;</div><div class="line">var clickBoxs = document.querySelectorAll('.clickBox')</div><div class="line">for (var i = 0; i &lt; clickBoxs.length; i++)&#123;</div><div class="line">    clickBoxs[i].onclick = iteratorFactory(i)</div><div class="line">&#125;</div><div class="line">    &lt;/script&gt;</div><div class="line">    &lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
       
     </div>
 
@@ -478,17 +478,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -541,22 +532,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text"> </span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
     </div>
