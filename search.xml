@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title></title>
+      <url>%2F2016%2F12%2F13%2F%E9%97%AD%E5%8C%85%2F</url>
+      <content type="text"><![CDATA[title: 闭包date: 2014-11-01 20:10:33categories: studying logtags: 涉及到循环变量时的闭包 1234567891011121314151617181920212223242526&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt; &lt;head&gt; &lt;meta charset="utf-8"&gt; &lt;/head&gt; &lt;body&gt; &lt;div class = 'clickBox'&gt;1&lt;/div&gt; &lt;div class = 'clickBox'&gt;2&lt;/div&gt; &lt;div class = 'clickBox'&gt;3&lt;/div&gt; &lt;script&gt; // for循环中， i每一次赋值，都对应一个新的函数，每一个函数都创建一个独立的空间。 // return 的小函数中要打印变量，但是该变量不在本函数作用域内。所以去上一级中查找。 // 因此，每一次遍历，都得到一个新的函数，并添加新的点击事件。function iteratorFactory(i)&#123; var onclick = function(e)&#123; console.log(i) &#125; return onclick;&#125;var clickBoxs = document.querySelectorAll('.clickBox')for (var i = 0; i &lt; clickBoxs.length; i++)&#123; clickBoxs[i].onclick = iteratorFactory(i)&#125; &lt;/script&gt; &lt;/body&gt;&lt;/html&gt;]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[哈哈哈]]></title>
       <url>%2F2016%2F12%2F02%2F%E5%93%88%E5%93%88%E5%93%88%2F</url>
       <content type="text"></content>
